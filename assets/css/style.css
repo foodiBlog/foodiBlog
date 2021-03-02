@@ -1,0 +1,538 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 10px #b3b3b3;
+    position: fixed;
+}
+header nav{
+    width: 80%;
+    margin: 0px auto;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #000;
+}
+header nav ul li a:hover{
+    color: #f4952f;
+}
+#logo{
+    width: 100%;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+.topJelo img,#kategorije div img,.post div img,#about img,#about img,#recepti div img,#receptJedan div img{
+    width: 100%;
+}
+#top4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.top4:nth-child(1){
+    width: 49%;
+    margin-right:10px;
+}
+.top4:nth-child(2){
+    width: 24%;
+    margin-right: 10px;
+}
+.top4:nth-child(3){
+    width: 24%;
+}
+.top4 .topJelo:nth-child(1){
+    margin-bottom: 2px;
+}
+#kategorije{
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e7e7e7;
+    padding-bottom: 40px;
+}
+.cat{
+    background-color: #e7e7e7;
+}
+.kategorije{
+    width: 20%;
+    text-align: center;
+}
+.kategorije h3{
+    margin-top: 15px;
+}
+.kategorije a{
+    text-decoration: none;
+    color: #000;
+}
+.naslov{
+    text-align: center;
+    padding: 75px;
+}
+.naslov h1{
+    color: #ff8400;
+}
+#najnovijiPostovi{
+    padding: 0px 40px;
+    width: 60%;
+    text-align: center;
+}
+.post{
+    margin-bottom: 40px;
+    padding: 0px 50px;
+}
+.post p{
+    text-align: justify;
+    margin: 25px 0px;
+}
+.post h3{
+    margin: 20px 0px;
+}
+.post a,.tekst a,#sendBtn,#stranicenje a,input[type='button'],#posaljiRecept input[type='button'],.adminKat a,#tabela a,#drzacSearch input,button,.nekaKlasa input[type='text']{
+    padding: 10px;  
+    text-decoration: none;
+    border: 1px solid #ff8400; 
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.post a:hover,.tekst a:hover,#sendBtn:hover,#stranicenje a:hover,input[type='button']:hover,#posaljiRecept input[type='button']:hover,.adminKat a:hover,#tabela a:hover,button:hover{
+    background-color: #ff8400;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.teksta a{
+    margin: 0px!important;
+}
+#centar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0px;
+}
+.ukloniPadding{
+    padding: 0px;
+}
+#about{
+    width: 35%;
+    padding-top: 65px;
+    padding-right: 30px;
+}
+#linija{
+    margin-top: 15px;
+    border-top: 1px solid #000;
+}
+#centar img{
+    box-shadow:  0px 0px 50px 10px #d3d3d3;
+}
+#centar h2,#centar h3{
+    margin-bottom: 30px;
+}
+#about span{
+    color: #f4952f;
+}
+#randomKomentari{
+    margin-top: 100px;
+    text-align: justify;
+}
+#randomKomentari p{
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+footer{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+}
+footer div{
+    width: 50%;
+    margin: 0px auto;
+}
+footer div ul{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+footer div li{
+    list-style-type: none;
+    margin: 20px;
+}
+footer div li a{
+    text-decoration: none;
+}
+footer ul a{
+    padding: 0px 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+}
+footer li{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+}
+footer ul li:hover{
+    background-color: #f4952f;
+}
+#linkovi a{
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+}
+#linkovi a:hover{
+    color: #f4952f;
+}
+img{
+    border-radius: 5px;
+}
+#recepti{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+}
+.recept{
+    border-bottom: 1px solid #e7e7e7;
+    /*box-shadow: 0px 5px 10px #b3b3b3;
+    border-radius: 5px;*/
+    width: 45%;
+    display: flex;
+    margin-top: 40px;
+}
+.zvezdice{
+    margin-bottom: 15px;
+}
+.slikaRecept{
+    width: 40%;
+}
+.tekst{
+    width: 55%;
+    margin: 5px;
+    margin-top: 0px;
+}
+.naslovPadding{
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+#receptJedan{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+}
+.blok{
+    width: 40%;
+    margin: 10px;
+}
+#receptJedan .tekst{
+    width: 55%;
+}
+#receptJedan .blok{
+    text-align: justify;
+}
+#receptJedan p,#receptJedan h2{
+    margin-bottom: 10px;
+}
+#komentariOcene{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+#komentari{
+    width: 60%;
+}
+#komentari p,#komentari h2{
+    margin-bottom: 10px;
+}
+#komentari h2{
+    margin-bottom: 30px;
+}
+#oceni{
+    width: 30%;
+}
+.komentar{
+    border-bottom: 1px solid #000;
+    margin-bottom: 25px;
+}
+#oceni h2{
+    margin-bottom: 25px;
+}
+#oceni{
+    text-align: center;
+}
+#oceni .far,#oceni .fas{
+    font-size: 30px;
+}
+main{
+    line-height: 1.8;
+}
+#top4{
+    line-height: normal;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    resize: none;
+}
+#forma textarea,#posaljiRecept textarea{
+    border: 1px solid #e1e1e1;
+}
+[id^=greska]{
+    color: #ff8400;
+}
+#porukaKomentar{
+    margin-top: 5px;
+}
+#stranicenje{
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+}
+#stranicenje a{
+    margin: 20px;
+}
+#logreg{
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+.logreg,#forma,#anketa{
+    text-align: center;
+    width: 45%;
+}
+.logreg h2{
+    margin-bottom: 20px;
+}
+#logreg input[type='text'],#logreg input[type='password'],#posaljiRecept input[type='text'],select{
+    height: 46px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #e1e1e1;
+    font-size: 14px;
+    color: #444444;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+textarea{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#anketa div{
+    text-align: left;
+    padding-left: 60px;
+}
+#forma input[type='button'],#posaljiRecept input[type='button']{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#posaljiRecept{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+#posaljiRecept div{
+    width: 45%;
+}
+input, textarea{
+    font-family: sans-serif;
+}
+.nekiTekst{
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0px 20px;
+}
+.border{
+    border: 1px solid #ff8400;
+}
+.err{
+    padding-bottom: 80px;
+}
+.err h2,.err p{
+    margin: 20px;
+}
+.err h1{
+    text-transform: uppercase;
+    font-size: 45px;
+}
+#ispisRezultata{
+    margin-top: 10px;
+}
+#adminDrzac{
+    width: 100%;
+    display: flex;
+}
+#nav{
+    background-color: #212529;
+    color: #fff;
+}
+#nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+#nav a:hover{
+    color: rgb(185, 185, 185);
+}
+#nav ul li{
+    list-style-type: none;
+    margin: 20px 0px;
+}
+#nav div p{
+    padding: 20px 30px;
+    font-size: 25px;
+    color: #fff;
+}
+#nav p{
+    font-size: 20px;
+    background-color: #292b2f;
+    padding: 10px;
+    color: rgb(177, 177, 177);
+}
+#nav div p{
+    padding: 20px 30px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #212529;
+}
+#content{
+    padding: 10px;
+    width: 85%;
+}
+.adminRecept{
+    padding-left: 40px;
+    width: 100%;
+}
+.adminRecept .slikaRecept{
+    width: 27%;
+}
+.buttonsAdmin{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.buttonsAdmin a{
+    margin-bottom: 5px;
+}
+#tabela{
+    width: 100%;
+    flex-wrap: wrap;
+}
+#table h2{
+    margin-bottom: 20px;
+}
+#adminDrzac h2{
+    margin-left: 10px;
+}
+table{
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr:nth-child(even),table thead{
+    background-color: #f1f1f1;
+}
+table td{
+    text-align: center;
+    padding: 10px;
+}
+table th{
+    background-color: #ffca92;
+    padding: 15px;
+}
+.kategorije a{
+    margin-top: 20px;
+}
+.adminKat a{
+    margin-top: 20px;
+}
+.padding{
+    padding-top: 30px;
+}
+.zaSliku{
+    width: 60%;
+    padding-left: 80px;
+}
+#tabela ul{
+    list-style-type: none;
+}
+#tabela li{
+    margin-top: 20px;
+    padding: 20px;
+}
+#posaljiRecept #novaPitanja{
+    width: 100%;
+}
+.nekaKlasa{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+.nekaKlasa h3{
+    padding: 20px;
+}
+#drzacSearch{
+    width: 80%;
+    margin: 0px auto;
+    text-align: right;
+}
+#stranicenje .trenutna{
+    background-color: #ff8400;
+    color: #fff;
+}
+.nekaKlasa form{
+    padding: 40px;
+    width: 80%;
+}
+.nekaKlasa input{
+    width: 100%;
+}
+.crveno{
+    font-weight: bold;
+    color: #ff0000;
+}
+.comm{
+    color: #ff8400;
+}
+.aktivacija{
+    padding-top: 140px;
+}
